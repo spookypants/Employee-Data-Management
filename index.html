@@ -8,14 +8,99 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css">
+        
+
 </head>
 <body>
+
+<!-- Jumbotron title-->
+<div class="jumbotron">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="display-4">Employee Data Management</h1>
+                <h3>A Comprehensive Directory of Employee Billable Hours</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div>
+            <h4>Current Employees</h4>
+            <table class="table table-sm table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Employee Name</th>
+                        <th scope="col">Role</th>
+                        <th scope="col">Start Date</th>
+                        <th scope="col">Months Worked</th>
+                        <th scope="col">Monthly Rate ($)</th>
+                        <th scope="col">Total Billed ($)</th>
+                    </tr>
+                </thead>
+                <tbody id="all-display">
+                </tbody>
+            </table>
+        </div>
+
+        <hr />
+
+        <div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <h4>Add Employee</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Employee Name</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Add employee name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Destination</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Add a destination">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Role</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Add a role">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Start Date (MM/DD/YYY)</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formGroupExampleInput2">Monthly Rate</label>
+                            <input type="text" class="form-control" id="formGroupExampleInput2">
+                        </div>
+                    </form>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase Core JavaScript Link -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+    <!-- Specific Firebase products we want -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script>
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Script -->
+    <script type="text/javascript" src="./assets/javascript/app.js"></script>    
+
+<<<<<<< HEAD
+    
+    
 
     
-    
-
-    
+=======
+>>>>>>> master
 </body>
 </html>

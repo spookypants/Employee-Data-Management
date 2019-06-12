@@ -1,0 +1,41 @@
+body {
+    background-color: white;
+    margin: 0;
+}
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+}
+
+
+h4 {
+    font-variant: small-caps;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 21px;
+    color: darkolivegreen;
+    letter-spacing: .05em;
+}
+.jumbotron {
+    background-color: darkslategray;
+    color: white;
+    background-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    width: 70%;
+    background-color: whitesmoke;
+    padding: 30px;
+}
+
+
+.thead-dark {
+    height: 20px;
+    background-color: darkslategray;
+    color: white;
+}
+
