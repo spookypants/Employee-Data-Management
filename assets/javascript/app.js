@@ -31,6 +31,8 @@
     role = $("#role").val().trim();
     startDate = $("#date").val().trim();
     monthRate = parseInt($("#rate").val().trim());
+    monthsWorked = moment().diff(moment(sv.startDate).format("M-D-YY"));
+    totalBilled = (monthsWorked * sv.monthRate);
 
   
     // Code for handling the push
@@ -45,14 +47,25 @@
     });
 
     // Firebase watcher
-    database.ref().on("child_added", function(snapshot) {
-        var sv = snapshot.val();
+    database.ref().on("child_added", function(childSnapshot) {
+        var sv = childSnapshot.val();
 
         console.log(sv.name);
         console.log(sv.role);
         console.log(moment(sv.startDate).format("M-D-YY"));
         console.log(sv.monthRate);
 
-        $("#all-display").html("<tr>");
+        $("#employee-table > tbody").append(
+          $("<tr>").append(
+            $("<td>").text(sv.name),
+            $("<td>").text(sv.role),
+            $("<td>").text(moment(sv.startDate).format("M-D-YY")),
+            $("<td>").text(sv.monthsWorked),
+            $("<td>").text(sv.monthRate),
+            $("<td>").text(sv.totalBilled),
+
+
+          )
+        )
     })
 
